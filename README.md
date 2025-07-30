@@ -1,35 +1,93 @@
-![nuxt-shadcn-dashboard-social-card](https://nuxt-shadcn-dashboard.vercel.app/social-card.png)
+# Nuxt UI Starter
 
-# Nuxt Shadcn UnoCSS - Dashboard
+## Futures
 
-[![built with nuxt][nuxt-src]][nuxt-href]
+- [x] Authentication & Authorization (Default)
+- [x] API Layer (Axios/Fetch)
+- [x] Internationalization (i18n) (Default)
+- [x] State Management (Pinia/Vuex)
+- [x] Theming & Dark Mode (Nuxtjs/color-mode)
+- [x] Component Library (Nuxt UI: The Intuitive Vue UI Library)
+- [x] Form Validation (Zod, Nuxt UI From)
+- [x] Notification (Nuxt UI useToast)
+- [ ] Error Handling
+- [x] Testing (Unit/E2E)
+- [x] CI & Linting (ESLint, Prettier, Github workflows)
+- [x] Performance & SEO
+- [x] PWA Support
+- [x] Analytics
+- [x] Documentation
 
-- [Live demo](https://nuxt-shadcn-dashboard.vercel.app)
-- [Component Documentation](https://shadcn-vue.com/docs/introduction)
+Look at [Nuxt docs](https://nuxt.com/docs/getting-started/introduction) and [Nuxt UI docs](https://ui.nuxt.com) to learn more.
 
-## Quick Start
+## Setup
 
-```bash [Terminal]
-npx degit dianprata/nuxt-shadcn-dashboard my-dashboard-app
-cd my-dashboard-app
-pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
+Make sure to install the dependencies:
+
+```bash
+# npm
+npm install
+
+# pnpm
+pnpm install
+
+# yarn
+yarn install
+
+# bun
+bun install
 ```
 
-## Contributing
+## Development Server
 
-1. Clone this repository.
-2. Install dependencies `pnpm install`.
-3. Use `pnpm run dev` to start dev server.
+Start the development server on `http://localhost:3000`:
 
-## Credits
+```bash
+# npm
+npm run dev
 
-- [Nuxt.js](https://nuxtjs.org/)
-- [Shadcn Vue](https://shadcn-vue.com/)
-- [UnoCSS](https://unocss.com/)
+# pnpm
+pnpm run dev
 
-## License
+# yarn
+yarn dev
 
-MIT
+# bun
+bun run dev
+```
 
-[nuxt-src]: https://img.shields.io/badge/Built%20With%20Nuxt-18181B?logo=nuxt.js
-[nuxt-href]: https://nuxt.com/
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm run build
+
+# yarn
+yarn build
+
+# bun
+bun run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm run preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

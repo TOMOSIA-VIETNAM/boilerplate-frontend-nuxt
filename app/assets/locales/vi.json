@@ -1,0 +1,146 @@
+{
+  "hello": "Xin chào",
+  "welcome": "Chào mừng đến với Nuxt 3!",
+  "language": "Ngôn ngữ",
+  "example": "Ví dụ",
+  "auth": {
+    "login": "Đăng nhập",
+    "logout": "Đăng xuất",
+    "email": "Email",
+    "password": "Mật khẩu",
+    "loginTitle": "Đăng nhập vào tài khoản",
+    "loginButton": "Đăng nhập",
+    "loginError": "Email hoặc mật khẩu không đúng",
+    "loginSuccess": "Đăng nhập thành công",
+    "logoutSuccess": "Đăng xuất thành công",
+    "welcomeBack": "Chào mừng trở lại",
+    "notAuthenticated": "Vui lòng đăng nhập để tiếp tục",
+    "demoCredentials": "Thông tin đăng nhập demo",
+    "passwordMax": "Mật khẩu tối đa 32 ký tự",
+    "emailRequired": "Vui lòng nhập email",
+    "emailInvalid": "Email không hợp lệ",
+    "passwordRequired": "Vui lòng nhập mật khẩu",
+    "passwordMin": "Mật khẩu tối thiểu 4 ký tự"
+  },
+  "advancedForm": {
+    "title": "Form Nâng Cao với Validation",
+    "subtitle": "Minh họa form validation nâng cao với Zod schema và Nuxt UI components",
+    "progress": {
+      "personalInfo": "Thông tin cá nhân",
+      "address": "Địa chỉ",
+      "preferences": "Tùy chọn"
+    },
+    "sections": {
+      "personalInfo": {
+        "title": "Thông tin cá nhân",
+        "subtitle": "Hãy cho chúng tôi biết về bạn"
+      },
+      "address": {
+        "title": "Thông tin địa chỉ",
+        "subtitle": "Chúng tôi có thể tìm bạn ở đâu?"
+      },
+      "preferences": {
+        "title": "Tùy chọn",
+        "subtitle": "Tùy chỉnh trải nghiệm của bạn"
+      }
+    },
+    "fields": {
+      "fullName": "Họ và tên",
+      "email": "Địa chỉ email",
+      "phone": "Số điện thoại",
+      "dateOfBirth": "Ngày sinh",
+      "streetAddress": "Địa chỉ đường",
+      "city": "Thành phố",
+      "state": "Tỉnh/Bang",
+      "zipCode": "Mã bưu điện",
+      "newsletter": "Đăng ký nhận bản tin",
+      "newsletterDesc": "Nhận cập nhật về tính năng và sản phẩm mới",
+      "marketing": "Thông tin tiếp thị",
+      "marketingDesc": "Nhận email quảng cáo và ưu đãi",
+      "interests": "Sở thích",
+      "comments": "Bình luận thêm"
+    },
+    "placeholders": {
+      "fullName": "Nhập họ và tên của bạn",
+      "email": "Nhập email của bạn",
+      "phone": "Nhập số điện thoại của bạn",
+      "streetAddress": "Nhập địa chỉ đường của bạn",
+      "city": "Nhập thành phố của bạn",
+      "state": "Chọn tỉnh/bang của bạn",
+      "zipCode": "Nhập mã bưu điện",
+      "comments": "Bất kỳ bình luận hoặc yêu cầu đặc biệt nào..."
+    },
+    "buttons": {
+      "reset": "Đặt lại form",
+      "submit": "Gửi form"
+    },
+    "messages": {
+      "success": "Form đã được gửi thành công!",
+      "reset": "Form đã được đặt lại về giá trị mặc định",
+      "error": "Đã xảy ra lỗi"
+    },
+    "preview": {
+      "title": "Xem trước dữ liệu form"
+    },
+    "validation": {
+      "fullNameRequired": "Họ và tên là bắt buộc",
+      "fullNameMin": "Họ và tên phải có ít nhất 2 ký tự",
+      "fullNameMax": "Họ và tên không được vượt quá 50 ký tự",
+      "emailRequired": "Email là bắt buộc",
+      "emailInvalid": "Vui lòng nhập địa chỉ email hợp lệ",
+      "phoneRequired": "Số điện thoại là bắt buộc",
+      "phoneInvalid": "Vui lòng nhập số điện thoại hợp lệ",
+      "dobRequired": "Ngày sinh là bắt buộc",
+      "dobInvalid": "Bạn phải từ 18 tuổi trở lên",
+      "streetRequired": "Địa chỉ là bắt buộc",
+      "streetMin": "Địa chỉ phải có ít nhất 5 ký tự",
+      "cityRequired": "Thành phố là bắt buộc",
+      "cityMin": "Thành phố phải có ít nhất 2 ký tự",
+      "stateRequired": "Tỉnh/Bang là bắt buộc",
+      "zipRequired": "Mã bưu điện là bắt buộc",
+      "zipInvalid": "Vui lòng nhập mã bưu điện hợp lệ",
+      "interestsMin": "Vui lòng chọn ít nhất một sở thích",
+      "interestsMax": "Bạn chỉ có thể chọn tối đa 5 sở thích",
+      "commentsMax": "Bình luận không được vượt quá 500 ký tự"
+    }
+  },
+  "menuForm": {
+    "title": "Form Món Ăn",
+    "subtitle": "Thêm hoặc chỉnh sửa món ăn cho nhà hàng của bạn",
+    "name": "Tên món ăn",
+    "description": "Mô tả",
+    "price": "Giá",
+    "category": "Danh mục",
+    "imageUrl": "URL hình ảnh",
+    "isAvailable": "Có sẵn để đặt",
+    "placeholders": {
+      "name": "Nhập tên món ăn",
+      "description": "Mô tả món ăn, nguyên liệu và cách chế biến",
+      "price": "0.00",
+      "category": "Chọn danh mục",
+      "imageUrl": "https://example.com/image.jpg"
+    },
+    "validation": {
+      "nameMin": "Tên món ăn phải có ít nhất 2 ký tự",
+      "nameMax": "Tên món ăn không được vượt quá 50 ký tự",
+      "descriptionMin": "Mô tả phải có ít nhất 10 ký tự",
+      "descriptionMax": "Mô tả không được vượt quá 200 ký tự",
+      "priceMin": "Giá phải ít nhất $0.01",
+      "priceMax": "Giá không được vượt quá $999.99",
+      "categoryRequired": "Danh mục là bắt buộc",
+      "imageUrlInvalid": "Vui lòng nhập URL hợp lệ"
+    },
+    "buttons": {
+      "reset": "Đặt lại",
+      "submit": "Gửi"
+    },
+    "messages": {
+      "success": "Món ăn đã được lưu thành công!",
+      "error": "Đã xảy ra lỗi",
+      "errorDescription": "Đã xảy ra lỗi không mong muốn khi lưu món ăn"
+    },
+    "preview": {
+      "title": "Xem trước dữ liệu form"
+    }
+  }
+}

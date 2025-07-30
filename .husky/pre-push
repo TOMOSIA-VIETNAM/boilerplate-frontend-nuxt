@@ -1,0 +1,18 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🛡️  Running pre-push checks..."
+
+# Example: Run tests
+# npm test
+
+# Example: Lint check
+npm run lint
+
+# Stop push if something fails
+if [ $? -ne 0 ]; then
+  echo "❌ Push blocked due to failed tests/linting."
+  exit 1
+fi
+
+echo "✅ Passed. Ready to push."

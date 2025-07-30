@@ -1,0 +1,146 @@
+{
+  "hello": "Hello",
+  "welcome": "Welcome to Nuxt 3!",
+  "language": "Language",
+  "example": "Example",
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "loginTitle": "Sign in to your account",
+    "loginButton": "Sign in",
+    "loginError": "Invalid email or password",
+    "loginSuccess": "Login successful",
+    "logoutSuccess": "Logout successful",
+    "welcomeBack": "Welcome back",
+    "notAuthenticated": "Please login to continue",
+    "demoCredentials": "Demo credentials",
+    "passwordMax": "Password must be at most 32 characters",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Email is invalid",
+    "passwordRequired": "Password is required",
+    "passwordMin": "Password must be at least 4 characters"
+  },
+  "advancedForm": {
+    "title": "Advanced Form Validation",
+    "subtitle": "Demonstrating advanced form validation with Zod schema and Nuxt UI components",
+    "progress": {
+      "personalInfo": "Personal Info",
+      "address": "Address",
+      "preferences": "Preferences"
+    },
+    "sections": {
+      "personalInfo": {
+        "title": "Personal Information",
+        "subtitle": "Tell us about yourself"
+      },
+      "address": {
+        "title": "Address Information",
+        "subtitle": "Where can we find you?"
+      },
+      "preferences": {
+        "title": "Preferences",
+        "subtitle": "Customize your experience"
+      }
+    },
+    "fields": {
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "dateOfBirth": "Date of Birth",
+      "streetAddress": "Street Address",
+      "city": "City",
+      "state": "State/Province",
+      "zipCode": "ZIP/Postal Code",
+      "newsletter": "Subscribe to Newsletter",
+      "newsletterDesc": "Get updates about new features and products",
+      "marketing": "Marketing Communications",
+      "marketingDesc": "Receive promotional emails and offers",
+      "interests": "Interests",
+      "comments": "Additional Comments"
+    },
+    "placeholders": {
+      "fullName": "Enter your full name",
+      "email": "Enter your email",
+      "phone": "Enter your phone number",
+      "streetAddress": "Enter your street address",
+      "city": "Enter your city",
+      "state": "Select your state",
+      "zipCode": "Enter ZIP code",
+      "comments": "Any additional comments or special requests..."
+    },
+    "buttons": {
+      "reset": "Reset Form",
+      "submit": "Submit Form"
+    },
+    "messages": {
+      "success": "Form submitted successfully!",
+      "reset": "Form has been reset to default values",
+      "error": "An error occurred"
+    },
+    "preview": {
+      "title": "Form Data Preview"
+    },
+    "validation": {
+      "fullNameRequired": "Full name is required",
+      "fullNameMin": "Name must be at least 2 characters",
+      "fullNameMax": "Name cannot exceed 50 characters",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "phoneRequired": "Phone number is required",
+      "phoneInvalid": "Please enter a valid phone number",
+      "dobRequired": "Date of birth is required",
+      "dobInvalid": "You must be at least 18 years old",
+      "streetRequired": "Street address is required",
+      "streetMin": "Address must be at least 5 characters",
+      "cityRequired": "City is required",
+      "cityMin": "City must be at least 2 characters",
+      "stateRequired": "State is required",
+      "zipRequired": "ZIP code is required",
+      "zipInvalid": "Please enter a valid ZIP code",
+      "interestsMin": "Please select at least one interest",
+      "interestsMax": "You can select up to 5 interests",
+      "commentsMax": "Comments cannot exceed 500 characters"
+    }
+  },
+  "menuForm": {
+    "title": "Menu Item Form",
+    "subtitle": "Add or edit menu items for your restaurant",
+    "name": "Menu Name",
+    "description": "Description",
+    "price": "Price",
+    "category": "Category",
+    "imageUrl": "Image URL",
+    "isAvailable": "Available for Order",
+    "placeholders": {
+      "name": "Enter menu item name",
+      "description": "Describe the dish, ingredients, and preparation",
+      "price": "0.00",
+      "category": "Select a category",
+      "imageUrl": "https://example.com/image.jpg"
+    },
+    "validation": {
+      "nameMin": "Menu name must be at least 2 characters",
+      "nameMax": "Menu name cannot exceed 50 characters",
+      "descriptionMin": "Description must be at least 10 characters",
+      "descriptionMax": "Description cannot exceed 200 characters",
+      "priceMin": "Price must be at least $0.01",
+      "priceMax": "Price cannot exceed $999.99",
+      "categoryRequired": "Category is required",
+      "imageUrlInvalid": "Please enter a valid URL"
+    },
+    "buttons": {
+      "reset": "Reset",
+      "submit": "Submit"
+    },
+    "messages": {
+      "success": "Menu item saved successfully!",
+      "error": "An error occurred",
+      "errorDescription": "An unexpected error occurred while saving the menu item"
+    },
+    "preview": {
+      "title": "Form Data Preview"
+    }
+  }
+}

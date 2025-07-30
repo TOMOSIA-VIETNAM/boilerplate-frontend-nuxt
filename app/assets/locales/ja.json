@@ -1,0 +1,146 @@
+{
+  "hello": "こんにちは",
+  "welcome": "Nuxt 3へようこそ！",
+  "language": "言語",
+  "example": "Example",
+  "auth": {
+    "login": "ログイン",
+    "logout": "ログアウト",
+    "email": "メールアドレス",
+    "password": "パスワード",
+    "loginTitle": "アカウントにサインイン",
+    "loginButton": "サインイン",
+    "loginError": "メールアドレスまたはパスワードが正しくありません",
+    "loginSuccess": "ログインに成功しました",
+    "logoutSuccess": "ログアウトに成功しました",
+    "welcomeBack": "おかえりなさい",
+    "notAuthenticated": "続行するにはログインしてください",
+    "demoCredentials": "デモ認証情報",
+    "passwordMax": "パスワードは最大32文字までです",
+    "emailRequired": "メールアドレスは必須です",
+    "emailInvalid": "メールアドレスが正しくありません",
+    "passwordRequired": "パスワードは必須です",
+    "passwordMin": "パスワードは4文字以上で入力してください"
+  },
+  "advancedForm": {
+    "title": "高度なフォーム検証",
+    "subtitle": "ZodスキーマとNuxt UIコンポーネントを使用した高度なフォーム検証のデモンストレーション",
+    "progress": {
+      "personalInfo": "個人情報",
+      "address": "住所",
+      "preferences": "設定"
+    },
+    "sections": {
+      "personalInfo": {
+        "title": "個人情報",
+        "subtitle": "あなたについて教えてください"
+      },
+      "address": {
+        "title": "住所情報",
+        "subtitle": "どこでお会いできますか？"
+      },
+      "preferences": {
+        "title": "設定",
+        "subtitle": "あなたの体験をカスタマイズ"
+      }
+    },
+    "fields": {
+      "fullName": "氏名",
+      "email": "メールアドレス",
+      "phone": "電話番号",
+      "dateOfBirth": "生年月日",
+      "streetAddress": "住所",
+      "city": "市区町村",
+      "state": "都道府県",
+      "zipCode": "郵便番号",
+      "newsletter": "ニュースレターを購読",
+      "newsletterDesc": "新機能や製品の更新情報を受け取る",
+      "marketing": "マーケティング通信",
+      "marketingDesc": "プロモーションメールやオファーを受け取る",
+      "interests": "興味",
+      "comments": "追加コメント"
+    },
+    "placeholders": {
+      "fullName": "氏名を入力してください",
+      "email": "メールアドレスを入力してください",
+      "phone": "電話番号を入力してください",
+      "streetAddress": "住所を入力してください",
+      "city": "市区町村を入力してください",
+      "state": "都道府県を選択してください",
+      "zipCode": "郵便番号を入力してください",
+      "comments": "追加のコメントや特別なリクエストがあれば..."
+    },
+    "buttons": {
+      "reset": "フォームをリセット",
+      "submit": "フォームを送信"
+    },
+    "messages": {
+      "success": "フォームが正常に送信されました！",
+      "reset": "フォームがデフォルト値にリセットされました",
+      "error": "エラーが発生しました"
+    },
+    "preview": {
+      "title": "フォームデータプレビュー"
+    },
+    "validation": {
+      "fullNameRequired": "氏名は必須です",
+      "fullNameMin": "氏名は2文字以上で入力してください",
+      "fullNameMax": "氏名は50文字以内で入力してください",
+      "emailRequired": "メールアドレスは必須です",
+      "emailInvalid": "有効なメールアドレスを入力してください",
+      "phoneRequired": "電話番号は必須です",
+      "phoneInvalid": "有効な電話番号を入力してください",
+      "dobRequired": "生年月日は必須です",
+      "dobInvalid": "18歳以上である必要があります",
+      "streetRequired": "住所は必須です",
+      "streetMin": "住所は5文字以上で入力してください",
+      "cityRequired": "市区町村は必須です",
+      "cityMin": "市区町村は2文字以上で入力してください",
+      "stateRequired": "都道府県は必須です",
+      "zipRequired": "郵便番号は必須です",
+      "zipInvalid": "有効な郵便番号を入力してください",
+      "interestsMin": "少なくとも1つの興味を選択してください",
+      "interestsMax": "最大5つまで選択できます",
+      "commentsMax": "コメントは500文字以内で入力してください"
+    }
+  },
+  "menuForm": {
+    "title": "メニューアイテムフォーム",
+    "subtitle": "レストランのメニューアイテムを追加または編集",
+    "name": "メニュー名",
+    "description": "説明",
+    "price": "価格",
+    "category": "カテゴリー",
+    "imageUrl": "画像URL",
+    "isAvailable": "注文可能",
+    "placeholders": {
+      "name": "メニューアイテム名を入力",
+      "description": "料理、材料、調理方法を説明",
+      "price": "0.00",
+      "category": "カテゴリーを選択",
+      "imageUrl": "https://example.com/image.jpg"
+    },
+    "validation": {
+      "nameMin": "メニュー名は2文字以上である必要があります",
+      "nameMax": "メニュー名は50文字を超えることはできません",
+      "descriptionMin": "説明は10文字以上である必要があります",
+      "descriptionMax": "説明は200文字を超えることはできません",
+      "priceMin": "価格は$0.01以上である必要があります",
+      "priceMax": "価格は$999.99を超えることはできません",
+      "categoryRequired": "カテゴリーは必須です",
+      "imageUrlInvalid": "有効なURLを入力してください"
+    },
+    "buttons": {
+      "reset": "リセット",
+      "submit": "送信"
+    },
+    "messages": {
+      "success": "メニューアイテムが正常に保存されました！",
+      "error": "エラーが発生しました",
+      "errorDescription": "メニューアイテムの保存中に予期しないエラーが発生しました"
+    },
+    "preview": {
+      "title": "フォームデータプレビュー"
+    }
+  }
+}
