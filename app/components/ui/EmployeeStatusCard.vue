@@ -77,7 +77,7 @@ const employees = [
     type: 'timeOff',
     avatar: 'https://randomuser.me/api/portraits/men/97.jpg',
   },
-  // Thêm ví dụ cho tab Birthday
+  // Add example for Birthday tab
   {
     id: 4,
     name: 'Anna Smith',

@@ -1,4 +1,4 @@
-export default defineNuxtRouteMiddleware((to) => {
+export default defineNuxtRouteMiddleware(() => {
   // Set default meta tags for all pages
   useHead({
     htmlAttrs: {
@@ -21,6 +21,5 @@ export default defineNuxtRouteMiddleware((to) => {
   // Track page views for analytics
   if (import.meta.client) {
     // You can integrate with Google Analytics, Plausible, or other analytics here
-    console.log('Page view:', to.path);
   }
 });

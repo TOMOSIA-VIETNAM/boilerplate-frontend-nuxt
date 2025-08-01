@@ -19,7 +19,7 @@ export const useCounterStore = defineStore('counter', {
   },
   actions: {
     debugState() {
-      console.log('Current store state:', {
+      console.log({
         count: this.count,
         history: this.history,
         future: this.future,
