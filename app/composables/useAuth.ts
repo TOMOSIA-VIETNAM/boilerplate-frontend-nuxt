@@ -1,5 +1,4 @@
-import { ref } from 'vue';
-import { useRouter } from 'vue-router';
+import { readonly, ref } from 'vue';
 
 interface User {
   email: string;
@@ -10,41 +9,68 @@ const user = ref<User | null>(null);
 const token = ref<string | null>(null);
 
 export function useAuth() {
-  const router = useRouter();
   const toast = useToast();
 
+  // Initialize auth state from localStorage on mount
+  onMounted(() => {
+    const storedToken = localStorage.getItem('token');
+    const storedUser = localStorage.getItem('user');
+
+    if (storedToken && storedUser) {
+      token.value = storedToken;
+      user.value = JSON.parse(storedUser);
+    }
+  });
+
   const login = async (email: string, password: string) => {
-    // Mock API call
     if (email === 'admin@example.com' && password === 'admin') {
-      user.value = { email, role: 'admin' };
-      token.value = 'mock-token-admin';
-      localStorage.setItem('token', token.value);
+      const userData = { email, role: 'admin' };
+      const userToken = 'mock-token-admin';
+
+      user.value = userData;
+      token.value = userToken;
+
+      // Store in localStorage
+      localStorage.setItem('token', userToken);
+      localStorage.setItem('user', JSON.stringify(userData));
 
       toast.add({
         title: 'Success',
         description: 'Login successful',
       });
 
-      router.push('/');
-    } else {
-      throw new Error('Invalid email or password');
+      await navigateTo('/dashboard');
     }
   };
 
   const logout = () => {
     user.value = null;
     token.value = null;
+
+    // Clear localStorage
     localStorage.removeItem('token');
+    localStorage.removeItem('user');
 
     toast.add({
       title: 'Success',
       description: 'Logout successful',
     });
 
-    router.push('/login');
+    navigateTo('/login');
   };
 
-  const isAuthenticated = () => !!token.value;
+  const isAuthenticated = () => {
+    return !!(token.value && user.value);
+  };
 
-  return { user, token, login, logout, isAuthenticated };
+  const getUser = () => user.value;
+
+  return {
+    user: readonly(user),
+    token: readonly(token),
+    login,
+    logout,
+    isAuthenticated,
+    getUser,
+  };
 }

@@ -57,11 +57,16 @@ export default defineNuxtConfig({
 
   colorMode: {
     classSuffix: '',
-    preference: 'system', // 'light' | 'dark' | 'system'
+    preference: 'light', // 'light' | 'dark' | 'system'
     fallback: 'light',
   },
 
   compatibilityDate: '2024-11-27',
+
+  // Global middleware
+  routeRules: {
+    '/**': { middleware: ['auth'] },
+  },
 
   // Performance & SEO optimizations
   app: {

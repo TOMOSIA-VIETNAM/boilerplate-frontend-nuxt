@@ -1,5 +1,5 @@
 <template>
-  <Container class="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-12">
+  <div class="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-12 flex flex-col items-center justify-center min-w-[480px]">
     <Box class="sm:mx-auto sm:w-full sm:max-w-md">
       <Box class="flex justify-center">
         <UIcon name="i-heroicons-lock-closed" class="h-12 w-12 text-primary" />
@@ -62,7 +62,7 @@
         </Box>
       </UCard>
     </Box>
-  </Container>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -88,6 +88,14 @@ const state = ref({
 });
 
 const onLogin = async () => {
-  await login(state.value.email, state.value.password);
+  try {
+    loading.value = true;
+    error.value = '';
+    await login(state.value.email, state.value.password);
+  } catch (err) {
+    error.value = err instanceof Error ? err.message : 'Login failed';
+  } finally {
+    loading.value = false;
+  }
 };
 </script>
